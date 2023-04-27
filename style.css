@@ -21,9 +21,12 @@ body {
     background-size: cover;
     background-position: center;
     height: 700px;
-    width: auto;
+    width: auto; /* acrescentei esse*/
     font-family: 'Roboto Mono', monospace, bold;
     color: aliceblue;
+    display: flex;
+    place-items: center;
+ 
 }
 
 img {
