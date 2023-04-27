@@ -1,0 +1,223 @@
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.8;
+    color:black
+ 
+
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    
+} 
+
+#p1 {
+    
+    background-image: url(imagens/sea-2361247.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+    font-family: 'Roboto Mono', monospace, bold;
+    color: aliceblue;
+}
+
+img {
+    border-radius: 50%;
+    border-top: 20px;
+    border-left: 20px;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  
+
+    
+}
+
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+section{
+    width: 700px;
+    padding: 40px;
+    background: white ;
+    font-family: 'Roboto Mono', monospace;
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+
+
+}
+
+summary{
+    background: #1167b1;
+    color:rgb(226, 266, 226);
+    padding:20px ;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    list-style: none;
+    
+
+}
+.botao:hover{
+    opacity: 0.7;
+}
+ p{
+    padding: 10px;
+    background: white;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+
+ }
+ .title-acordeon{
+    font-family: 'Roboto Mono', monospace,  bold;
+    font-size:larger;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 700px;
+   padding: 40px;
+   background: white ;
+   margin:auto;
+   margin-top: 200px;
+
+ }
+ 
+ .botao-call{
+    width: 220px;
+   padding: 40px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    text-decoration: none;
+    background-color: #2a9df4;
+    border-radius: 4px;
+    padding: 10px 15px; 
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    
+    
+  }
+.botao-call:hover{
+    opacity: 0.7;
+}
+
+.logo{ 
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 4.5%;
+}
+
+div.gallery {
+  display: flex;
+  flex-direction: row;
+ display: grid;
+ place-items: center;
+ align-items:center;
+ 
+    
+ 
+    margin: 5px;
+   /* border: 1px solid #ccc;*/
+    float: left;
+    width: 180px;
+    
+   
+  }
+  
+  div.gallery:hover {
+    opacity: 0.7;
+  }
+  .footer{
+    font-size: small;
+
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    /*height: auto;
+    /*display: flex;
+    justify-content: space-around;
+    flex-direction: row;*/
+    
+    
+    
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace, bold;
+    
+  }
+
+  .teste-call{
+   
+    
+        text-decoration: none;
+        background-color: #03254c;
+        border-radius: 4px;
+        padding: 10px 15px; 
+        color: white;
+        align-items: center;
+
+        
+  }
+      
+      .teste-call:hover {
+        opacity: 0.7 ;
+      }
+
+.gallery-adoption{
+
+  font-family: 'Roboto Mono', monospace;
+  
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content: space-around;
+ 
+    
+    
+
+   
+  
+}
+.menu{
+
+  
+  color: black;
+  text-align:center;
+  align-items:center;
+  margin-right:auto;
+  font-family: 'Roboto Mono', monospace,  bold;
+  display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+ 
