@@ -47,7 +47,7 @@ h1{
 }
 
 @media (min-width: 768px) {
-  #p1 {
+  #p1 .menu {
 
   background-image: url('imagens/sea-2361247.jpg');
 
@@ -64,7 +64,7 @@ h1{
 }
 }
 @media (min-width: 992px) {
-#p1 {
+#p1 .menu {
   
 
   background-image: url('imagens/sea-2361247.jpg');
@@ -80,7 +80,7 @@ h1{
 }
 }
 @media (min-width: 1200px) {
-#p1 
+#p1 .menu
  
 {
   background-image: url('imagens/sea-2361247.jpg');
