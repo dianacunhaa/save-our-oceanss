@@ -223,4 +223,16 @@ flex-direction: row;
 justify-content: space-around;
 
 }
- 
+@media (max-width: 640px){
+
+  menu{
+   
+  color: black;
+  text-align:center;
+  align-items:center;
+  margin-right:auto;
+  font-family: 'Roboto Mono', monospace,  bold;
+  display: flex;
+flex-direction: row;
+justify-content: space-around;
+  }
