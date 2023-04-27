@@ -24,6 +24,8 @@ body {
     width: auto; /* acrescentei esse*/
     font-family: 'Roboto Mono', monospace, bold;
     color: aliceblue;
+    object-fit: cover;
+    object-position: bottom;
    
  
 }
@@ -216,7 +218,7 @@ div.gallery {
   color: black;
   text-align:center;
   align-items:center;
- /* margin-right:auto;*/
+  margin-right:auto;
   font-family: 'Roboto Mono', monospace,  bold;
   display: flex;
 flex-direction: row;
