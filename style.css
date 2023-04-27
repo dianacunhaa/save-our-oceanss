@@ -63,13 +63,13 @@ h1{
   background-size: cover;
 }
 }
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
 #p1 .menu {
   
 
   background-image: url('imagens/sea-2361247.jpg');
   width: auto; /* acrescentei esse*/
-  font-family: 'Roboto Mono', monospace, bold;
+ /* font-family: 'Roboto Mono', monospace, bold;
   color: aliceblue;
   object-fit: cover;
   object-position: bottom;
@@ -85,7 +85,7 @@ h1{
 {
   background-image: url('imagens/sea-2361247.jpg');
   width: auto; /* acrescentei esse*/
-  font-family: 'Roboto Mono', monospace, bold;
+ /* font-family: 'Roboto Mono', monospace, bold;
   color: aliceblue;
   object-fit: cover;
   object-position: bottom;
@@ -95,7 +95,7 @@ h1{
   background-size: cover;
 }
 }
-
+*/
 
 
 *{ 
