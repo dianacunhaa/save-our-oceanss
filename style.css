@@ -14,7 +14,7 @@ body {
     
 } 
 
-.p1 {
+#p1 {
     
     background: url(imagens/sea-2361247.jpg);
     background-repeat: no-repeat;
@@ -22,9 +22,10 @@ body {
     background-position: center;
     height: 700px;
     width: auto; /* acrescentei esse*/
+    font-family: 'Roboto Mono', monospace, bold;
+    color: aliceblue;
     display: flex;
-    place-items: center;
-    
+ place-items: center;
  
 }
 
@@ -223,16 +224,4 @@ flex-direction: row;
 justify-content: space-around;
 
 }
-@media (max-width: 640px){
-
-  menu{
-   
-  color: black;
-  text-align:center;
-  align-items:center;
-  margin-right:auto;
-  font-family: 'Roboto Mono', monospace,  bold;
-  display: flex;
-flex-direction: row;
-justify-content: space-around;
-  }
+ 
