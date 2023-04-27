@@ -16,11 +16,12 @@ body {
 
 #p1 {
     
-    background-image: url(imagens/sea-2361247.jpg);
+    background: url(imagens/sea-2361247.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 850px;
+    height: 700px;
+    width: auto;
     font-family: 'Roboto Mono', monospace, bold;
     color: aliceblue;
 }
@@ -96,7 +97,7 @@ summary{
    padding: 40px;
    background: white ;
    margin:auto;
-   margin-top: 200px;
+   margin-top: 180px;
 
  }
  
