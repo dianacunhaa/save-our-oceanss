@@ -14,7 +14,7 @@ body {
     
 } 
 
-#p1 {
+.p1 {
     
     background: url(imagens/sea-2361247.jpg);
     background-repeat: no-repeat;
@@ -22,10 +22,9 @@ body {
     background-position: center;
     height: 700px;
     width: auto; /* acrescentei esse*/
-    font-family: 'Roboto Mono', monospace, bold;
-    color: aliceblue;
     display: flex;
     place-items: center;
+    
  
 }
 
