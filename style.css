@@ -46,6 +46,56 @@ h1{
     
 }
 
+@media (min-width: 768px) {
+  #p1 {
+
+  background-image: url('imagens/sea-2361247.jpg');
+
+  
+  width: auto; /* acrescentei esse*/
+  font-family: 'Roboto Mono', monospace, bold;
+  color: aliceblue;
+  object-fit: cover;
+  object-position: bottom;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+}
+@media (min-width: 992px) {
+#p1 {
+  
+
+  background-image: url('imagens/sea-2361247.jpg');
+  width: auto; /* acrescentei esse*/
+  font-family: 'Roboto Mono', monospace, bold;
+  color: aliceblue;
+  object-fit: cover;
+  object-position: bottom;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+}
+@media (min-width: 1200px) {
+#p1 
+ 
+{
+  background-image: url('imagens/sea-2361247.jpg');
+  width: auto; /* acrescentei esse*/
+  font-family: 'Roboto Mono', monospace, bold;
+  color: aliceblue;
+  object-fit: cover;
+  object-position: bottom;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+}
+
 
 
 *{ 
