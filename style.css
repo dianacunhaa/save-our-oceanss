@@ -1,183 +1,433 @@
-body {
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Roboto', sans-serif;
-    opacity: 0.8;
-    color:black
- 
-
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-
-    
-} 
-
-#p1 {
-    
-    background: url(imagens/sea-2361247.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 700px;
-    width: auto; /* acrescentei esse*/
-    font-family: 'Roboto Mono', monospace, bold;
-    color: aliceblue;
-    object-fit: cover;
-    object-position: bottom;
-   
- 
-}
-
-img {
-    border-radius: 50%;
-    border-top: 20px;
-    border-left: 20px;
-    
-}
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  
-
-    
-}
 
 
 
-
-*{ 
+*
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+*body 
+{
+    min-height: 1000px;
+  
+}
+/*HTML <section>
+<div class="colorbk">
+  <h1>ADOPT ANIMAL MARINE <i class="fa-solid fa-heart"></i></h1>
+</div>
+</section>
+.colorbk{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+
+}*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 100;
+  margin-top: 200px;
+}
+.container .box
+{
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  filter: grayscale(1);
+  border: 4px solid rgb(0, 38, 48);
+}
+
+.container .box:hover{
+  filter: grayscale(0);
+}
+
+.container .box video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.adopt1{
+  background-color:  rgb(0, 38, 48) ;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  padding-top: 100px;
+  font-size: 60px;
+}
+.adopt{
+    background-color:  rgb(0, 38, 48) ;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   padding-top: 200px;
+
+   
+}
+#adoption{
+  background-color:rgb(0, 38, 48) ;
+}
+
+.eusoucard{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(0deg, rgb(1, 60, 77), rgb(0, 38, 48)) no-repeat;
+   
+ 
+
+}
+ #swiper {
+    height: 70vh;
+    aspect-ratio: 2 / 3;
+    perspective: 1000px;
+    perspective-origin: center 50%;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: translateZ(calc(-30px * var(--i))) translateY(calc(-20px * var(--i))) rotate(calc(-4deg * var(--i)));
+    filter: drop-shadow(2px 2px 20px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.5s;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  #like,
+  #dislike {
+    font-size: 16vh;
+    border-radius: 50%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* don't run animation at the beginning */
+    animation-play-state: paused;
+  }
+  #like.trigger,
+  #dislike.trigger {
+    animation-name: animation2;
+  }
+  #like {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #dislike {
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  @keyframes animation1 {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes animation2 {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+.cabeçalho{
+  margin-top: 300px;
+ 
+}
+
+header
+{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0 100px;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 1s;
+
+}
+
+header.sticky
+{
+    height: 80px;
+    z-index: 100;
+}
+
+header .banner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+
+
+}
+header.sticky .banner{
+    opacity: 0.5 ;
+}
+
+header .logo
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    color: white;
+    font-weight: bold;
+    transition: 1s;
+    text-decoration: none;
+    z-index: 1;
+    
+
+
+}
+
+header.sticky .logo
+{
+    position:absolute;
+    font-size: 2em;
+    left: 100px;
+    transform: translate(0,-50%);
+}
+
+
+
+nav
+{
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+nav ul
+{
+    position: relative;
+    display: flex;
+    transition: 0.25s;
+    transform:translateX(100px) ;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+header.sticky nav ul 
+{
+
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.75s ;
+    opacity: 1;
+    visibility: visible;
+
+}
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a 
+{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-decoration: none;
+
+}
+nav ul li a:hover
+{
+    color: rgb(28, 114, 105);
+
+}
+
+section
+{
+margin-top: 20vh;
+padding: 100px;
+}
+
+section h2
+{
+    font-size: 3em;
+}
+
+section p{
+    font-size: 1.2em;
+}
+@media(max-width:991px)
+{
+    section,
+    header
+    {
+        padding: 40px
+    }
+
+    section h2
+    {
+        font-size: 2em;
+    }
+
+    header.sticky .logo
+    {
+        left: 40px;
+    }
+
+    header.sticky .banner
+    {
+        opacity: 0;
+    }
+
+    nav ul
+    {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav.active ul
+    {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 80px);
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+
+   
+    nav ul li a 
+    {
+      font-size: 1.5em;
+      padding: 5px 15px;
+    }
+
+    header.sticky .toggle
+    {
+        position: fixed;
+        top: 15px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: #fff url(menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header.sticky .toggle.active
+    {
+        background: #fff url(close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.infogram-embed{
+font-family: inherit;
+font-weight: inherit;
+font-size: inherit;
+line-height: inherit;
+letter-spacing: inherit;
+color: inherit;
+}
+
+.parceiros {
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+
    
 }
 
-section{
-    width: 700px;
-    padding: 40px;
-    background: white ;
-    font-family: 'Roboto Mono', monospace;
-    margin:auto;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 5px;
-
-
-}
-
-summary{
-    background: #1167b1;
-    color:rgb(226, 266, 226);
-    padding:20px ;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight: bold;
-    list-style: none;
-    
-
-}
-.botao:hover{
-    opacity: 0.7;
-}
- p{
-    padding: 10px;
-    background: white;
-    color: black;
-    font-family: 'Roboto Mono', monospace;
-
- }
- .title-acordeon{
-    font-family: 'Roboto Mono', monospace,  bold;
-    font-size:larger;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 700px;
-   padding: 40px;
-   background: white ;
-   margin:auto;
-   margin-top: 180px;
-
- }
- 
- .botao-call{
-    width: 220px;
-   padding: 40px;
-    display: flex;
-   justify-content: center;
-   align-items: center;
-    text-decoration: none;
-    background-color: #2a9df4;
-    border-radius: 4px;
-    padding: 10px 15px; 
-    color: white;
-    font-family: 'Roboto Mono', monospace;
-    
-    
-  }
-.botao-call:hover{
-    opacity: 0.7;
-}
-
-.logo{ 
-
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    width: 4.5%;
+.information{
+    background-color: rgb(0, 38, 48);
 }
 
 div.gallery {
-  display: flex;
-  flex-direction: row;
- display: grid;
- place-items: center;
- align-items:center;
- 
-    
- 
-    margin: 5px;
-   /* border: 1px solid #ccc;*/
-    float: left;
-    width: 180px;
-    
+    display: flex;
+    flex-direction: row;
+   display: grid;
+   place-items: center;
+   align-items:center;
    
-  }
+      
+   
+      margin: 5px;
+     /* border: 1px solid #ccc;*/
+      float: left;
+      width: 180px;
+      
+     
+    }
+    
+    div.gallery:hover {
+      opacity: 0.7;
+    }
+    .footer{
+      font-size: small;
   
-  div.gallery:hover {
-    opacity: 0.7;
-  }
-  .footer{
-    font-size: small;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;}
+      /*height: auto;
+      /*display: flex;
+      justify-content: space-around;
+      flex-direction: row;*/
 
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    /*height: auto;
-    /*display: flex;
-    justify-content: space-around;
-    flex-direction: row;*/
-    
-    
-    
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-    font-family: 'Roboto Mono', monospace, bold;
-    
-  }
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        font-family: 'Roboto Mono', monospace, bold;
+        
+      }
 
-  .teste-call{
+      .teste-call{
    
     
         text-decoration: none;
@@ -196,7 +446,7 @@ div.gallery {
 
 .gallery-adoption{
 
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   
     margin:auto;
     margin-top: 20px;
@@ -213,17 +463,71 @@ div.gallery {
    
   
 }
-.menu{
+ .adoptclick{
+    border-radius: 50%;
+    border-top: 20px;
+    border-left: 20px;}
 
-  
-  color: black;
-  text-align:center;
-  align-items:center;
-  margin-right:auto;
-  font-family: 'Roboto Mono', monospace,  bold;
+
+    .title-acordeon{
+        font-family: 'Montserrat', sans-serif,  bold;
+        font-size: 40px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 700px;
+       padding: 40px;
+       background: white ;
+       margin:auto;
+       margin-top: 180px;
+    }
+    
+section .faq{
+  width: 700px;
+  padding: 40px;
+  background: white ;
+  font-family: 'Roboto Mono', monospace;
+  margin:auto;
+  margin-top: 20px;
   display: flex;
-flex-direction: row;
-justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+
 
 }
- 
+
+summary{
+  background: rgb(1, 86, 109);
+  color:rgb(226, 266, 226);
+  padding:20px ;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  list-style: none;
+  
+
+}
+.botao:hover{
+  opacity: 0.7;
+}
+p{
+  padding: 10px;
+  background: white;
+  color: black;
+  font-family: 'Roboto Mono', monospace;
+
+}
+.title-acordeon{
+  font-family: 'Roboto Mono', monospace,  bold;
+  font-size:30px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 700px;
+ padding: 40px;
+ background: white ;
+ margin:auto;
+ margin-top: 180px;
+
+}
